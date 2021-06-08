@@ -1,0 +1,62 @@
+.h1 {
+  text-align: center;
+}
+.par {
+  font-weight: bold;
+}
+.element {
+  background-color: lightgrey;
+  color: red;
+  display: inline;
+  width: 100px;
+  height: 20px;
+  text-align: center;
+}
+.doc {
+  background-color: lightgrey;
+  text-align: left;
+  padding: 20px;
+}
+.text {
+  color: red;
+  margin-left: 20px;
+  display: inline;
+}
+.text1 {color: red;
+  margin-left: 40px;
+  display: inline;
+}
+  .text2 {color: red;
+    margin-left: 60px;
+    display: inline;
+  }
+
+  .black{color: black;
+  }
+
+.d1{display: inline-block;
+  background-color:lightgrey;
+  color: rgb(12, 150, 150);
+margin: 2px;
+margin-left: 5px;
+width: 110px;
+}
+
+.d2{display: inline-block;
+  background-color:lightgrey;
+  color: rgb(12, 150, 150);
+  margin: 2px;
+  width: 50px;
+}
+.d3{display: inline-block;
+  background-color:lightgrey;
+  color: rgb(12, 150, 150);
+  margin: 2px;
+  width: 150px;
+}
+.d4{display: inline-block;
+  background-color:lightgrey;
+  color: rgb(12, 150, 150);
+  margin: 2px;
+  width: 60px;
+}
