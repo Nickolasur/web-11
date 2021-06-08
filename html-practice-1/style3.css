@@ -1,0 +1,14 @@
+.head {
+  text-align: center;
+}
+.formuls {
+  text-align: center;
+}
+.marked {
+  background-color: brown;
+  padding: 4px;
+  width: 50px;
+}
+.letter {
+  color: red;
+}
