@@ -1,0 +1,36 @@
+.frame{background-color: rgb(197, 152, 160);
+width: 300px;
+padding-top: 17px;
+padding-bottom: 25px;
+font-size: 20px;
+text-decoration: none;
+list-style-type: none;
+counter-reset: number;
+}
+ol li ::before{
+    color: cornsilk;
+    background: rgb(219, 120, 120);
+    display: inline-block;
+    margin: 3px 5px 3px 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    content: counter(number) ".";
+    counter-increment: number;
+    line-height: 40px;
+}
+li{color: snow;
+margin-top: 8px;
+margin-left: -18px;
+width: 295px;
+background-color: rgb(219, 120, 120);
+list-style: none;
+}
+
+.fruit{background-color: rgb(192, 72, 72);
+padding-left: 0px;
+padding-top: 5px;
+padding-bottom: 5px;
+padding-right: 5px;
+font-size: 25px;
+}

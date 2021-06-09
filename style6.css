@@ -1,0 +1,17 @@
+.margi{list-style-type: none;
+    width: 400px;
+height: 10px;
+padding-top: 0px;
+padding-bottom: 10px;
+padding-left: 40px;
+margin-left: -40px;
+}
+
+.definit{list-style-type: decimal;
+    list-style-position: outside;
+margin-left: 20px;
+margin-top: 8px;}
+
+.shadow{color: rgb(157, 157, 165);}
+
+.blue{color: rgb(32, 20, 209);}
