@@ -1,0 +1,25 @@
+main{max-width: 1000px;
+background-color: rgb(227, 237, 238);
+padding: 10px;}
+
+.text{text-align: center;
+}
+
+
+.eat{
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    vertical-align: bottom;
+    margin: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    width: 140px;
+    height: 180px;
+    border: 3px solid rgb(146, 140, 140); 
+    border-radius: 30px;
+}
+
+ .end{text-align: center;}
