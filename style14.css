@@ -1,0 +1,29 @@
+body{width:150%;
+}
+
+table{border-collapse: collapse;
+    background-color: beige;
+}
+th{
+    width: 100px;
+height: 30px;
+text-align: center;
+vertical-align: middle;
+background-color:aquamarine;
+}
+td{
+    width: 100px;
+    height: 30px;
+    text-align: center; 
+}
+tr th:first-child {
+    background-color:aquamarine;
+}
+tr:nth-child(2n){
+    background-color: rgb(207, 225, 226);
+}
+thead th {position: sticky;
+    top: 0;
+}
+tr th {position: sticky;
+left: 0;}
