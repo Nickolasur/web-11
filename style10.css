@@ -1,0 +1,54 @@
+footer{background-color: rgb(15, 52, 121);
+height: 280px;
+}
+ul{background-color: rgb(15, 52, 121);
+list-style-type: none;
+display: inline-block;
+margin-right: -5px;
+padding-top: 40px;
+padding-bottom: 20px;
+}
+li{list-style-type: none;
+padding-right: 150px;
+padding-left: 40px;
+}
+
+a{text-decoration: none;
+color: cornsilk;
+}
+ 
+li:hover {text-decoration: underline;
+}
+
+.social li{display: inline-block;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.faceb{background-image: url(fb_gray.png);
+width: 64px;
+height: 64px;
+display: block;
+}
+.faceb:hover{background-image: url(fb.png);
+}
+.insta{background-image: url(insta_gray.png);
+    width: 64px;
+    height: 64px;
+    display: block;
+    }
+    .insta:hover{background-image: url(insta.png);
+    }
+    .yout{background-image: url(youtube_gray.png);
+        width: 64px;
+        height: 64px;
+        display: block;
+        }
+        .yout:hover{background-image: url(youtube.png);
+        }
+.hr {border: cornsilk;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.bottom{text-align:center; 
+    margin: 35px;
+color: cornsilk;}
