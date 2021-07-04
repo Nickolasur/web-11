@@ -1,0 +1,54 @@
+body {
+  background-color: rgb(187, 174, 121);
+}
+
+.time {
+  position: relative;
+  width: 126px;
+  height: 126px;
+  border-radius: 50%;
+  border: 5px solid blueviolet;
+  margin: 10em;
+}
+
+.hours {
+  position: absolute;
+  width: 4px;
+  height: 32px;
+  left: 59.5px;
+  top: 59px;
+  background: #9912c2;
+  animation: hou 350s infinite steps(120);
+  transform-origin: 0 0px;
+}
+.minuts {
+  position: absolute;
+  width: 4px;
+  height: 48px;
+  left: 59.5px;
+  top: 58.5px;
+  background: #4e0c63;
+  animation: min 5s infinite steps(70);
+  transform-origin: 0 0px;
+}
+
+@keyframes hou {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes min {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.centr {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 55px;
+  left: 55px;
+  background: #4e0c63;
+}

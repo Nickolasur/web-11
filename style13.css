@@ -1,0 +1,84 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.block {
+  display: inline-block;
+  max-width: 800px;
+}
+.block1 {
+  display: inline-block;
+}
+.text1 {display: inline-block;
+  width: 300px;
+  height: 200px;
+  background-color: burlywood;
+}
+
+.text1 h1 {
+  text-align: center;
+  line-height: 150px;
+}
+.text2 {display: inline-block;
+  width: 300px;
+  height: 200px;
+  background-color: burlywood;
+  margin-left: -50px;
+}
+.text2 h1{text-align: center;
+  line-height: 150px;
+}
+img {display: inline-block;
+  width: 300px;
+  height: 200px;
+  transition: all 1s ease-out;
+}
+
+.cartoon1 {
+  float: right;
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+  margin-top: -200px;
+}
+.cartoon2{
+  float: left;
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+}
+.block2{
+  display: inline-block;
+}
+.block3{display: inline-block;
+}
+.cartoon3{float: right;
+  width: 50%;
+  height: 200px;
+  margin-top: -5px;
+  transition: all 1s ease-out;
+}
+.text3{display: inline-block;
+  width: 300px;
+  height: 200px;
+  background-color: burlywood;
+  margin-top: -5px;
+  transition: all 1s ease-out;
+}
+.text3 h1{text-align: center;
+  line-height: 150px;
+}
+.cartoon3:hover img{transform: scale(2);
+}
+.block3 :hover{opacity: .5;
+background-color: rgb(80, 77, 77);
+}
+.block3 ::before {
+  content: " ";
+  position: relative;
+  width: 700px;
+  height: 200px;
+  background-color: rgb(2, 2, 2, 2);
+  margin-top: -6px;
+  transition: 0.3s ease-out;
+}
