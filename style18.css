@@ -1,0 +1,81 @@
+*{box-sizing: border-box;
+}
+body{width: 100%;
+    height: 100%;
+    min-width: 800px;
+    margin-left: 8%;
+    position: relative;
+}
+.texet{width: 65%;
+    font-size: 20px;
+    text-align: justify;
+}
+.photo{float: right;
+    margin-right: 5px;
+    position: relative;
+}
+.one{
+width: 180px;
+height: 70px;
+width: 25%;
+margin-top: -200px;
+margin-right: 100px;
+}
+img{width: 320px;
+height: 200px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+}
+.article{background-color: rgb(97, 118, 209);
+    color: white;
+    text-align: right;
+    width: 320px;
+    padding: 10px;
+    margin-top: -10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.two{
+    width: 180px;
+    height: 70px;
+    width: 25%;
+    margin-top: 200px;
+    margin-right: 100px;
+}
+.down{display: block;
+    width: 65%;
+    font-size: 20px;
+    text-align: justify;
+}
+@media screen and (max-width: 799.98px) and (min-width: 599.98px){.photo{
+    display: inline-block;
+margin-top: -200px;
+font-size: 15px;
+left: -5%;
+top: 0%;
+}
+
+.one{display: inline-block;
+    margin-right: 85px;
+}
+.two{display: inline-block;
+    margin-left: 85px;
+}
+   body{max-width: 50%;
+} 
+   .down{margin-top: 300px;
+    width: 680px;
+}
+.texet{width: 680px;
+}
+}
+@media screen and (max-width: 599.97px) {.photo{display: block;
+    float: left;
+    margin-top: 200px;
+    margin-left: 0px;
+    margin-bottom: 200px;
+}
+.texet{width: 40%;
+}
+.down{width: 40%;}
+}
