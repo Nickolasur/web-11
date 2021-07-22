@@ -1,0 +1,375 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  margin: 0;
+  background-color: aqua;
+}
+header {
+  width: 100%;
+  height: 70px;
+  background-color: royalblue;
+  color: white;
+  padding-left: 3%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+main {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  width: 100%;
+  height: 1000px;
+  display: grid;
+  grid-template-columns: 30% 30% 30% 30% 30%;
+  grid-template-rows: 100%;
+  gap: 0% 1%;
+  grid-auto-flow: row;
+  grid-template-areas: "To-Do In-Progress Test Fix Done";
+  margin-top: 7%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.To-Do {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4% 25% 25% 25% 21%;
+  gap: 0, 5% 1%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "To-D"
+    "Lorem"
+    "In-sed"
+    "Integer"
+    "None1";
+  grid-area: To-Do;
+  border-radius: 15px;
+  border: 2px solid whitesmoke;
+  background-color: rgb(180, 176, 176);
+}
+
+.To-D {
+  grid-area: To-D;
+  background-color: rgb(180, 176, 176);
+  padding-left: 5%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.Lorem {
+  grid-area: Lorem;
+  padding: 2%;
+  padding-left: 5%;
+  font-size: larger;
+  background-color: whitesmoke;
+  margin: 4%;
+  border-radius: 10px;
+}
+
+.In-sed {
+  grid-area: In-sed;
+  padding: 2%;
+  padding-left: 5%;
+  font-size: larger;
+  background-color: whitesmoke;
+  margin: 4%;
+  border-radius: 10px;
+}
+
+.Integer {
+  grid-area: Integer;
+  padding: 2%;
+  padding-left: 5%;
+  font-size: larger;
+  background-color: whitesmoke;
+  margin: 4%;
+  border-radius: 10px;
+}
+
+.None1 {
+  grid-area: None1;
+}
+
+.flexteam {
+  display: flex;
+  flex-direction: row;
+  justify-content: stretch;
+  align-items: flex-end;
+  width: 100%;
+}
+.fle1 {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  height: 25%;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding-right: 15%;
+  padding: 3%;
+  padding-left: 1%;
+}
+.fle2 {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  margin-right: 1%;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.drob {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 15px;
+}
+img {
+  height: 35%;
+  width: 85%;
+}
+
+.In-Progress {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 12% 22% 22% 22% 22%;
+  gap: 0, 5% 1%;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "In-P"
+    "Quisque"
+    "Nunc"
+    "None2"
+    "None3";
+  grid-area: In-Progress;
+  border-radius: 15px;
+  border: 2px solid whitesmoke;
+  background-color: rgb(180, 176, 176);
+  overflow: scroll;
+}
+
+.In-P {
+  grid-area: In-P;
+  background-color: rgb(180, 176, 176);
+  padding-left: 5%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.Quisque {
+  grid-area: Quisque;
+  padding: 2%;
+  padding-left: 5%;
+  font-size: larger;
+  background-color: whitesmoke;
+  margin: 4%;
+  margin-top: -5%;
+  border-radius: 10px;
+}
+
+.Nunc {
+  grid-area: Nunc;
+  padding: 2%;
+  padding-left: 5%;
+  font-size: larger;
+  background-color: whitesmoke;
+  margin: 4%;
+  border-radius: 10px;
+  height: 1050px;
+}
+
+.None2 {
+  grid-area: None2;
+}
+
+.None3 {
+  grid-area: None3;
+}
+
+.Test {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 12% 23% 26% 23% 16%;
+  gap: 0, 5% 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Tes"
+    "Sed"
+    "Suspendis"
+    "Integer1"
+    "None4";
+  grid-area: Test;
+  border-radius: 15px;
+  border: 2px solid whitesmoke;
+  background-color: rgb(180, 176, 176);
+}
+
+.Tes {
+  grid-area: Tes;
+  background-color: rgb(180, 176, 176);
+  padding-left: 5%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.Sed {
+  grid-area: Sed;
+  padding: 2%;
+  padding-left: 5%;
+  font-size: larger;
+  background-color: whitesmoke;
+  margin: 4%;
+  border-radius: 10px;
+}
+
+.Suspendis {
+  grid-area: Suspendis;
+  padding: 2%;
+  padding-left: 5%;
+  font-size: larger;
+  background-color: whitesmoke;
+  margin: 4%;
+  border-radius: 10px;
+}
+
+.Integer1 {
+  grid-area: Integer1;
+  padding: 2%;
+  padding-left: 5%;
+  font-size: larger;
+  background-color: whitesmoke;
+  margin: 4%;
+  border-radius: 10px;
+}
+
+.None4 {
+  grid-area: None4;
+}
+
+.Fix {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 12% 22% 22% 25% 19%;
+  gap: 0, 5% 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Fi"
+    "Nulla-in"
+    "Nulla-ac"
+    "Integer2"
+    "None5";
+  grid-area: Fix;
+  border-radius: 15px;
+  border: 2px solid whitesmoke;
+  background-color: rgb(180, 176, 176);
+}
+
+.Fi {
+  grid-area: Fi;
+  background-color: rgb(180, 176, 176);
+  padding-left: 5%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.Nulla-in {
+  grid-area: Nulla-in;
+  padding: 2%;
+  padding-left: 5%;
+  font-size: larger;
+  background-color: whitesmoke;
+  margin: 4%;
+  border-radius: 10px;
+}
+
+.Nulla-ac {
+  grid-area: Nulla-ac;
+  padding: 2%;
+  padding-left: 5%;
+  font-size: larger;
+  background-color: whitesmoke;
+  margin: 4%;
+  border-radius: 10px;
+}
+
+.Integer2 {
+  grid-area: Integer2;
+  padding: 2%;
+  padding-left: 5%;
+  font-size: larger;
+  background-color: whitesmoke;
+  margin: 4%;
+  border-radius: 10px;
+}
+
+.None5 {
+  grid-area: None5;
+}
+
+.Done {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 12% 22% 22% 22% 22%;
+  gap: 0, 5% 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Do"
+    "Nullam-id"
+    "Maecenas"
+    "Sed-et"
+    "none6";
+  grid-area: Done;
+  border-radius: 15px;
+  border: 2px solid whitesmoke;
+  background-color: rgb(180, 176, 176);
+}
+
+.Do {
+  grid-area: Do;
+  background-color: rgb(180, 176, 176);
+  padding-left: 5%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.Nullam-id {
+  grid-area: Nullam-id;
+  padding: 2%;
+  padding-left: 5%;
+  font-size: larger;
+  background-color: whitesmoke;
+  margin: 4%;
+  border-radius: 10px;
+}
+
+.Maecenas {
+  grid-area: Maecenas;
+  padding: 2%;
+  padding-left: 5%;
+  font-size: larger;
+  background-color: whitesmoke;
+  margin: 4%;
+  border-radius: 10px;
+}
+
+.Sed-et {
+  grid-area: Sed-et;
+  padding: 2%;
+  padding-left: 5%;
+  font-size: larger;
+  background-color: whitesmoke;
+  margin: 4%;
+  border-radius: 10px;
+}
+
+.none6 {
+  grid-area: none6;
+}
