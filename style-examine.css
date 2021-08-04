@@ -1,0 +1,604 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI';
+}
+main {
+  width: 100%;
+  height: 100%;
+}
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 55px 165px 305px 1fr 1fr;
+  gap: 30px 30px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Company Dashboard Dashboard Dashboard Dashboard Dashboard Dashboard Dashboard Dashboard Dashboard Dashboard Dashboard Dashboard"
+    "Company Used Used Used Revenue Revenue Revenue Fixe Fixe Fixe Followers Followers Followers"
+    "Company Daily Daily Daily Daily Email Email Email Email Completed Completed Completed Completed"
+    "Company Tasks Tasks Tasks Tasks Tasks Tasks Employees Employees Employees Employees Employees Employees"
+    "Company About About About About About About About About About About About About";
+}
+
+.Company {
+  margin-left: 3%;
+  grid-area: Company;
+  position: fixed;
+  width: 160px;
+  min-width: 160px;
+}
+.nav-menu{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: inherit;
+  color: white;
+}
+.nav-menu:after{
+  content:'\2630';
+  text-decoration: none;
+  overflow: hidden;
+}
+[id='nav-menu'] {
+  position: absolute;
+  display: none;
+}
+
+.side-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  width: 220px;
+  margin-left: -5%;
+}
+.side-menu a {
+  padding-left: 15px; padding-right: 25px;
+  color: grey;
+  text-decoration: none;
+}
+.side-menu a:hover {
+  color: white;
+  background-color: rgb(209, 21, 77);
+}
+
+.left{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+.gray-cart{
+  width: 60%;
+}
+.white-cart{
+  width: 60%;
+}
+.left .white-cart{
+  display: none;
+}
+.left:hover .gray-cart{
+  display: none;
+}
+.left:hover .white-cart{
+  display: block;
+}
+.Dashboard {
+  grid-area: Dashboard;
+}
+.Used { 
+  grid-area: Used;
+}
+.up {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: rgb(230, 221, 221);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.up-cart1 {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: rgb(34, 163, 41);
+  padding: 18px;
+  margin-top: -15px;
+  margin-left: 5px;
+}
+.up-fle {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: flex-end;
+  padding-top: 7%;
+}
+.bold{
+  font-size: 25px;
+}
+.grey {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: stretch;
+  color: grey;
+  padding-bottom: 8%;
+  padding-left: 10%;
+  padding-top: 15%;
+}
+.Revenue {
+  grid-area: Revenue;
+}
+.up-cart2 {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: rgb(199, 181, 23);
+  padding: 18px;
+  margin-top: -15px;
+  margin-left: 5px;
+}
+.Fixe {
+  grid-area: Fixe;
+}
+.up-cart3 {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: rgb(20, 23, 207);
+  padding: 18px;
+  margin-top: -15px;
+  margin-left: 5px;
+}
+.Followers {
+  grid-area: Followers;
+}
+.up-cart4 {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  background-color: rgb(207, 20, 20);
+  padding: 18px;
+  margin-top: -15px;
+  margin-left: 5px;
+}
+.Daily {
+  grid-area: Daily;
+}
+.middle{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(230, 221, 221);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.middle-cart1{
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: rgb(34, 163, 41);
+  padding: 18px;
+  margin-top: -15px;
+  margin-left: 5px;
+}
+.middle-fle{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding-left: 10%;
+  margin-top: 3%;
+}
+.text-middle{
+  font-size: 14px;
+}
+.middle-grey{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: stretch;
+  color: grey;
+  padding-bottom: 8%;
+  padding-left: 10%;
+  padding-top: 7%;
+}
+.graf{
+  width: 100%;
+}
+.Email {
+  grid-area: Email;
+}
+.middle-cart2{
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: rgb(199, 181, 23);
+  padding: 18px;
+  margin-top: -15px;
+}
+.Completed {
+  grid-area: Completed;
+}
+.middle-cart3{
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: rgb(20, 23, 207);
+  padding: 18px;
+  margin-top: -15px;
+}
+.Tasks {
+  grid-area: Tasks;
+}
+.down-left{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(230, 221, 221);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  margin-top: -2%;
+}
+.down-cart1{
+  display: flex;
+  width: 90%;
+  height: 80px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  list-style-type: none;
+  background-color: rgb(199, 181, 23);
+  color: aliceblue;
+  padding: 18px;
+  margin-top: -15px;
+  margin-left: 5px;
+  font-size: 20px;
+}
+.down-cart11{
+  display:flex;
+flex-direction: row;
+justify-content: left;
+padding: 5%;
+padding-left: 0%;
+font-size: 20px;
+}
+.down-cart11:hover{
+  background-color: rgb(216, 210, 210);
+  padding: 2%;
+}
+.down-list{
+  list-style-type: none;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: -1%;
+  margin-bottom: 2%;
+}
+.list1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  }
+  .list2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-bottom: none;
+  }
+  .down-text{
+    width: 80%;
+    font-size: 13.5px;
+  }
+  .Employees {
+    grid-area: Employees;
+  }
+  .down-right{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(230, 221, 221);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    margin-top: -2%;
+  }
+  .down-cart2{
+    width: 90%;
+    height: 100px;
+    justify-content: left;
+    background-color: rgb(20, 23, 207);
+    color: aliceblue;
+    padding-left: 5%;
+    margin-top: -15px;
+  }
+  table{
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 3%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 9%;
+  }
+  thead{
+    color: rgb(16, 167, 116);
+  }
+  td{
+    padding-left: 5%;
+    height: 40px;
+    border-bottom: 1px solid grey;
+  }
+  .t1{
+    padding-left: 5%;
+    height: 40px;
+    border-bottom: none;
+  }
+  .About {
+    grid-area: About;
+    margin-top: 3%;
+    margin-top: -0.5%;
+  }
+  .foot{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+  }
+  .foot-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+  }
+  .foot-right{
+    display: flex;
+    flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  }
+
+
+@media screen and (max-width: 1000px) and (min-width:800px)
+{.container {
+  display: grid;
+  grid-template-columns: 200px 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 55px 165px 165px 165px 305px 1fr 1fr;
+  gap: 70px 30px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Company Dashboard Dashboard Dashboard Dashboard Dashboard Dashboard"
+    "Company Used Used Used Revenue Revenue Revenue"
+    "Company Fixe Fixe Fixe Followers Followers Followers"
+    "Company Daily Daily Email Email Completed Completed"
+    "Company Tasks Tasks Tasks Tasks Tasks Tasks"
+    "Company Employees Employees Employees Employees Employees Employees"
+    "Company About About About About About About";
+}
+.middle-grey{
+  padding-bottom: 25%;
+  max-height: 150px;
+}
+.down-left{
+  margin-top: 10%;
+}
+.down-right{
+  margin-top: 10%;
+  margin-bottom: -15%;
+}
+.foot-left{
+  justify-content: space-around;
+  width: 70%;
+}
+}
+
+@media screen and (max-width: 800px) and (min-width: 650px){
+  main{
+    margin-left: -25%;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 200px 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 55px 165px 165px 165px 305px 1fr 1fr;
+    gap: 70px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Company Dashboard Dashboard Dashboard Dashboard Dashboard Dashboard"
+      "Company Used Used Used Revenue Revenue Revenue"
+      "Company Fixe Fixe Fixe Followers Followers Followers"
+      "Company Daily Daily Email Email Completed Completed"
+      "Company Tasks Tasks Tasks Tasks Tasks Tasks"
+      "Company Employees Employees Employees Employees Employees Employees"
+      "Company About About About About About About";
+  }
+  .nav-menu:after{
+    content: '\2630';
+    position: absolute;
+  }
+.navbar{
+  display: none;
+}
+.side-menu{
+  display: none;
+}
+.nav-menu{
+  position: relative;
+  left: 185px;
+  top: 27px;
+  background: inherit;
+  color: rgb(70, 65, 65);
+}
+.nav-menu:after{
+  content: '\2630';
+  text-decoration: none;
+  overflow: hidden;
+}
+.middle-grey{
+  padding-bottom: 25%;
+  max-height: 150px;
+}
+  .down-left{
+    margin-top: 12%;
+    padding-bottom: 15%;
+  }
+  .down-text{
+    font-size: 12px;
+  }
+  .down-right{
+    margin-top: 10%;
+    margin-bottom: -15%;
+  }
+  .foot-left{
+    justify-content: space-around;
+    width: 70%;
+  }
+  
+}
+@media screen and (max-width: 650px) and (min-width: 500px) {
+  main{
+    margin-left: -15%;
+  }
+.container {
+    display: grid;
+    grid-template-columns: 100px 2fr 2fr;
+    grid-template-rows: 55px 125px 125px 305px 305px 0.8fr 1fr 1fr 1fr;
+    gap: 70px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Company Dashboard Dashboard"
+      "Company Used Revenue"
+      "Company Fixe Followers"
+      "Company Daily Daily"
+      "Company Email Email"
+      "Company Completed Completed"
+      "Company Tasks Tasks"
+      "Company Employees Employees"
+      "Company About About";
+  }
+  .nav-menu:after{
+    content: '\2630';
+    position: absolute;
+  }
+.navbar{
+  display: none;
+}
+.side-menu{
+  display: none;
+}
+.nav-menu{
+  position: relative;
+  left: 85px;
+  top: 27px;
+  background: inherit;
+  color: rgb(70, 65, 65);
+}
+.middle-grey{
+  padding-bottom: 5%;
+  max-height: 150px;
+}
+  .down-left{
+    margin-top: 0%;
+  }
+  .down-right{
+    margin-top: 4%;
+    margin-bottom: -15%;
+  }
+  .foot-left{
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+}
+@media screen and (max-width: 500px) {
+  main{
+    margin-left: -15%;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 100px 6fr;
+    grid-template-rows: 55px 155px 155px 155px 155px 0.5fr 0.5fr 0.5fr 0.5fr 1fr 1fr;
+    gap: 70px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Company Dashboard"
+      "Company Used"
+      "Company Revenue"
+      "Company Fixe"
+      "Company Followers"
+      "Company Daily"
+      "Company Email"
+      "Company Completed"
+      "Company Tasks"
+      "Company Employees"
+      "Company About";
+  }
+  .nav-menu:after{
+    content: '\2630';
+    position: absolute;
+  }
+.navbar{
+  display: none;
+}
+.side-menu{
+  display: none;
+}
+.nav-menu{
+  position: relative;
+  left: 85px;
+  top: 27px;
+  background: inherit;
+  color: rgb(70, 65, 65);
+}
+.middle-grey{
+  padding-bottom: 5%;
+  max-height: 150px;
+}
+  .down-left{
+    margin-top: 0%;
+  }
+  .down-cart11{
+    font-size: 14px;
+  }
+  .down-right{
+    margin-top: 4%;
+    margin-bottom: -15%;
+  }
+  .down-cart2{
+    font-size: 13.5px;
+  }
+  .foot{
+    font-size: 12px;
+  }
+  .foot-left{
+    justify-content: space-around;
+    width: 100%;
+  }
+}
