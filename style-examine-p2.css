@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI';
+  }
+  main {
+    width: 100%;
+    height: 100%;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 150px 1.5fr 1.5fr 1fr 1.5fr 1fr 1fr 1fr 1fr 1fr 1fr 0.3fr 1.2fr;
+    grid-template-rows: 75px 165px 305px 1fr 1fr;
+    gap: 30px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Company User-profile User-profile User-profile User-profile User-profile User-profile User-profile User-profile User-profile User-profile User-profile User-profile"
+      "Company Forms-edit Forms-edit Forms-edit Forms-edit Forms-edit Forms-edit Forms-edit Forms-edit Author Author Author Author"
+      "Company Forms-edit Forms-edit Forms-edit Forms-edit Forms-edit Forms-edit Forms-edit Forms-edit Author Author Author Author"
+      "Company Forms-edit Forms-edit Forms-edit Forms-edit Forms-edit Forms-edit Forms-edit Forms-edit . . . ."
+      "Company About About About About About About About About About About About About";
+  }
+  
+  .Company { 
+    grid-area: Company; 
+    position: fixed;
+    width: 120px;
+    min-width: 160px;
+}
+  .nav-menu{
+    position: relative;
+    left: 10px;
+    top: 10px;
+    background: inherit;
+    color: white;
+  }
+  .nav-menu:after{
+    content: '\2630';
+    text-decoration: none;
+    overflow: hidden;
+  }
+  [id='nav-menu'] {
+    position: absolute;
+    display: none;
+  }
+    .side-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        width: 220px;
+        margin-left: -4.5%;
+      }
+      .side-menu a {
+        padding-left: 15px; padding-right: 25px;
+        padding-top: 15px;
+        color: grey;
+        text-decoration: none;
+      }
+      .side-menu a:hover {
+        color: white;
+        background-color: rgb(209, 21, 77);
+      }
+      .left{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+      }
+      .gray-cart{
+        width: 60%;
+      }
+      .white-cart{
+        width: 60%;
+      }
+      .left .white-cart{
+        display: none;
+      }
+      .left:hover .gray-cart{
+        display: none;
+      }
+      .left:hover .white-cart{
+        display: block;
+      }
+  .User-profile { 
+    grid-area: User-profile;
+    margin-top: 3%;
+}
+  
+  .Forms-edit { 
+    grid-area: Forms-edit; 
+    margin-top: -2%;
+    padding-bottom: 5%;
+}
+  .down-left{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(230, 221, 221);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  .down-cart1{
+    display: flex;
+    width: 90%;
+    height: 80px;
+    flex-direction: column;
+    align-items: left;
+    list-style-type: none;
+    background-color: rgb(209, 21, 77);
+    color: aliceblue;
+    padding: 1%;
+    padding-left: 5%;
+    margin-top: -15px;
+    margin-left: 5px;
+    font-size: 20px;
+  }
+  
+  .Author { 
+    grid-area: Author; 
+}
+  
+  .About { 
+    grid-area: About; 
+    margin-top: -3%;
+}
+  .foot{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+  }
+  .foot-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+  }
+  .foot-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  @media screen and (max-width: 1000px) and (min-width:800px) {
+    .container{display: grid;
+        grid-template-columns: 200px 0.9fr;
+        grid-template-rows: 70px 165px;
+        gap: 80px 20px;
+        grid-template-areas:
+      "Company User-profile"
+      "Company Author"
+      "Company Forms-edit"
+      "Company About";
+    }
+    .User-profile{
+        margin-top: 6%;
+    }
+    .Forms-edit{ 
+        width: 110%;
+        margin-bottom: -7%;
+    }
+    .About{
+        width: 110%;
+    }
+    .foot-left{
+        justify-content: space-around;
+        width: 50%;
+      }
+      .foot-right{
+        justify-content: flex-end;
+        width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 800px){
+    main{
+        margin-left: -25%;
+    }
+    .container{display: grid;
+        grid-template-columns: 200px 0.9fr;
+        grid-template-rows: 70px 165px;
+        gap: 80px 20px;
+        grid-template-areas:
+      "Company User-profile"
+      "Company Author"
+      "Company Forms-edit"
+      "Company About";
+    }
+    .nav-menu:after{content: '\2630';
+        position: absolute;
+      }
+    .navbar{display: none;
+    }
+    .side-menu{display: none;
+    }
+    hr{display: none;
+    }
+    .nav-menu{position: relative;
+      left: 200px;
+      top: 0px;
+      background: inherit;
+      color: rgb(70, 65, 65);
+    }
+    .User-profile{
+        margin-top: 6%;
+    }
+    .Forms-edit{
+        width: 180%;
+        margin-bottom: -7%;
+    }
+    .Author{
+        width: 160%;
+    }
+    .About{
+        width: 200%;
+    } 
+    .foot-left{
+        justify-content: space-around;
+        width: 50%;
+      }
+      .foot-right{
+        justify-content: space-around;
+        width: 50%;
+    }
+  }
+  
