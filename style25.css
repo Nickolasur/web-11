@@ -1,0 +1,83 @@
+*{box-sizing: border-box;
+}
+main{width: 100%;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.5fr;
+    grid-auto-columns: 1fr;
+    gap: 16px 65px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "Registration Registration Registration Registration Registration Registration Personal Personal Personal Personal Personal Personal"
+      "Left Left Left Left Left Left Right Right Right Right Right Right";
+  }
+  
+  .Registration { grid-area: Registration; }
+  
+  .Personal { grid-area: Personal; }
+  
+  .Left { grid-area: Left; }
+  
+  .Right { grid-area: Right; }
+  
+  @media screen and (max-width: 900px) and (min-width: 600px){
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 0.4fr 1.5fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 16px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "Registration Registration Registration Registration Registration Registration" 
+          "Left Left Left Left Left Left"
+          "Personal Personal Personal Personal Personal Personal" 
+          "Right Right Right Right Right Right";
+      } 
+      .Left{
+          margin-bottom: 8%;
+    }
+      .Right{
+          margin-top: -17%;
+        }
+        .down {
+            margin-top: -15%;
+            margin-left: 5%;
+        }
+  }
+
+  @media screen and (max-width: 600px){
+      .row{
+          display: flex;
+          flex-direction: column;
+      }
+      .Right{
+          width: 200%;
+          margin-top: -25%;
+        }
+      .Left{
+          margin-top: -5%;
+          margin-bottom: 3%;
+        }
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 0.4fr 1.5fr 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 16px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "Registration Registration Registration Registration Registration Registration" 
+          "Left Left Left Left Left Left"
+          "Personal Personal Personal Personal Personal Personal" 
+          "Right Right Right Right Right Right";
+      } 
+      .d-md-flex{display: flex;
+        flex-direction: row;
+    justify-content: flex-end;
+}
+  }
